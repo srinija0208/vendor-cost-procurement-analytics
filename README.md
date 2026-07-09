@@ -77,8 +77,8 @@ Power BI Dashboard
 
 **Page 2 — Efficiency & Risk Deep-Dive:** avg. freight cost per unit, total unsold inventory value, avg. stock turnover, and vendors flagged high-risk KPIs; freight cost inefficiency ranking; vendor tier segmentation (margin vs. turnover, sized by sales volume); bulk purchase unit-price impact; statistical significance callout on the vendor margin gap.
 
-`![Page 1](images\page1.png)`
-`![Page 2](images\page2.png)`
+![Vendor & Brand Performance Overview](images\page1.png)
+![Efficiency & Risk Deep-Dive](images\page2.png)
 
 ## Repository Structure
 ```
@@ -90,8 +90,7 @@ Vendor-Performance-Analytics/
 │   └── vendor_performance_analysis.ipynb
 ├── scripts/
 │   ├── data_ingestion.py
-│   └── vendor_summary.py
-├── data/                                 # raw CSVs
+│   └── vendor_summary.py                                
 ├── dashboard/
 │   └── Vendor_Performance_Dashboard.pbix
 ├── images/                               # dashboard screenshots
