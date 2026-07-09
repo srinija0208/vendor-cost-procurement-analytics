@@ -78,6 +78,7 @@ Power BI Dashboard
 **Page 2 — Efficiency & Risk Deep-Dive:** avg. freight cost per unit, total unsold inventory value, avg. stock turnover, and vendors flagged high-risk KPIs; freight cost inefficiency ranking; vendor tier segmentation (margin vs. turnover, sized by sales volume); bulk purchase unit-price impact; statistical significance callout on the vendor margin gap.
 
 ![Vendor & Brand Performance Overview](images\page1.png)
+
 ![Efficiency & Risk Deep-Dive](images\page2.png)
 
 ## Repository Structure
@@ -108,4 +109,4 @@ Vendor-Performance-Analytics/
 SQL query design (CTEs, multi-table joins) · data cleaning & feature engineering · exploratory data analysis · statistical hypothesis testing (t-test, Mann-Whitney U, confidence intervals) · business intelligence dashboard design · business recommendation writing
 
 ## Author
-Srinija — Data Analyst | [LinkedIn](#) | [Portfolio](#)
+Srinija — Data Analyst | [LinkedIn](https://www.linkedin.com/in/srinija-somannagari-773443293/)
