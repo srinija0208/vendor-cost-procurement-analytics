@@ -1,11 +1,19 @@
 import sqlite3
 import pandas as pd
 import logging
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "inventory.db")
+LOG_DIR = os.path.join(BASE_DIR, "logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+
+
 logging.basicConfig(
-    filename="logs/vendor_summary.log", 
+    filename=os.path.join(LOG_DIR, "vendor_summary.log"),
     level=logging.DEBUG,
-    format="%(asctime)s - %(levelname)s - %(message)s", 
-    filemode="a"  
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filemode="a"
 )
 
 def ingest_db(df, table_name, engine):
@@ -102,17 +110,19 @@ def clean_data(df):
     return df
 
 if __name__ == '__main__':
-    # creating database connection
-    conn = sqlite3.connect('inventory.db')
-    
+    # craeting database connection using sqlite3
+    conn = sqlite3.connect(DB_PATH)   
+
     logging.info('Creating Vendor Summary Table.....')
     summary_df = create_vendor_summary(conn)
+
     logging.info(summary_df.head())
-    
     logging.info('Cleaning Data.....')
+
     clean_df = clean_data(summary_df)
     logging.info(clean_df.head())
-    
+
     logging.info('Ingesting data.....')
-    ingest_db(clean_df,'vendor_sales_summary',conn)
+    ingest_db(clean_df, 'vendor_sales_summary', conn)
+    
     logging.info('Completed')
