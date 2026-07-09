@@ -77,9 +77,9 @@ Power BI Dashboard
 
 **Page 2 — Efficiency & Risk Deep-Dive:** avg. freight cost per unit, total unsold inventory value, avg. stock turnover, and vendors flagged high-risk KPIs; freight cost inefficiency ranking; vendor tier segmentation (margin vs. turnover, sized by sales volume); bulk purchase unit-price impact; statistical significance callout on the vendor margin gap.
 
-![Vendor & Brand Performance Overview](images\page1.png)
+![Vendor & Brand Performance Overview](images/page1.png)
 
-![Efficiency & Risk Deep-Dive](images\page2.png)
+![Efficiency & Risk Deep-Dive](images/page2.png)
 
 ## Repository Structure
 ```
